@@ -24,6 +24,17 @@ h6 {
     letter-spacing: 1.5px;
 }
 
+.section__titulo {
+    text-align: center;
+    font-size: 40px;
+    color: #009A3A;
+}
+
+.contenedor {
+    margin: auto;
+    width: 99%;
+}
+
 
 /*----------Estilos del Header----------*/
 
@@ -39,6 +50,7 @@ h6 {
 .logo,
 .icon-menu {
     margin: 5px;
+    color: #fff;
 }
 
 .icon-menu {
@@ -46,9 +58,9 @@ h6 {
     width: 40px;
     height: 40px;
     font-size: 30px;
-    background: #FBA919;
-    color: black;
-    line-height: 40px;
+    background: #009A3A;
+    text-align: center;
+    line-height: 45px;
     border-radius: 5px;
     margin-left: auto;
     cursor: pointer;
@@ -74,16 +86,105 @@ h6 {
 .menu__link {
     display: block;
     padding: 15px;
-    background: #FBA919;
+    background: #009A3A;
     text-decoration: none;
     color: #fff;
 }
 
-.menu__link:hover {
+.menu__link:hover,
+.select {
     background: #fff;
-    color: #FBA919;
+    color: #009A3A;
 }
 
 .mostrar {
     left: 0;
+}
+
+
+/*----------Estilos del Banner----------*/
+
+.banner {
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+    margin-bottom: 20px;
+}
+
+.banner__img {
+    width: 100%;
+}
+
+.banner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: #009A3A;
+    text-align: center;
+}
+
+.banner__txt {
+    display: none;
+}
+
+
+/*------------------------Estilos de info------------------------*/
+
+.info__img {
+    width: 420px;
+    height: 420px;
+}
+
+.info__columna {
+    background: #009A3A;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+
+/*------------------------Estilos de adopciones------------------------*/
+
+.adopciones__columnas {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.adopciones__descripcion {
+    position: absolute;
+    color: #009A3A;
+    background: rgba(0, 0, 0, 0.5);
+    width: 60%;
+    height: 100%;
+    padding: 5px;
+}
+
+.adopciones__titulo {
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+
+/*----------------Estilos del footer----------------*/
+
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer .social [class^="icon-"] {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
 }
